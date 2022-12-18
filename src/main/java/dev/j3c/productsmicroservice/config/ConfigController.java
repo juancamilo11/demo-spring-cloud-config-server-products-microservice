@@ -1,4 +1,4 @@
-package dev.j3c.configserverclient.config;
+package dev.j3c.productsmicroservice.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/clients-microservice")
+@RequestMapping("/api/v1/products-microservice")
 public class ConfigController {
 
     private final ApplicationConfig applicationConfig;

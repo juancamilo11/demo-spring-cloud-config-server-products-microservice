@@ -1,6 +1,6 @@
 spring:
   application:
-    name: clients-microservice
+    name: products-microservice
   profiles:
     active: dev
   config:

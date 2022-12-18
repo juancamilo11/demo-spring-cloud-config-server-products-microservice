@@ -1,9 +1,8 @@
-package dev.j3c.configserverclient.config;
+package dev.j3c.productsmicroservice.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,13 +10,13 @@ import org.springframework.stereotype.Component;
 @RefreshScope // --> Enables a POST type request for actuator [/actuator/refresh] to refresh properties without restarting the application.
 public class ApplicationConfig {
 
-    @Value("${client.text.property}")
+    @Value("${product.text.property}")
     private String textProperty;
 
-    @Value("${client.number.property}")
+    @Value("${product.number.property}")
     private Integer numberProperty;
 
-    @Value("${client.stage.name}")
+    @Value("${product.stage.name}")
     private String stageName;
 
     public String getTextProperty() {
